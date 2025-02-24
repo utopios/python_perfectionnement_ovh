@@ -65,3 +65,11 @@ class Domaine(Service):
 
     def calculer_prix(self):
         return self.base_prix + (10 if self.extension == ".com" else 5)
+
+## Question 2
+
+clients = {
+    #"Alice" : set()
+}
+
+commande_en_attente = deque()
