@@ -86,8 +86,9 @@ print((compte1 + compte2))
 # # compte.solde = -100
 # print(compte.solde)
 
+from abc import ABC
 
-class Vehicule:
+class Vehicule(ABC):
     def demarrer(self):
         print("Véhicule démarrée")
 
