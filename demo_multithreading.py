@@ -41,3 +41,7 @@ class LogiqueCustomThread(Thread):
 customThread = LogiqueCustomThread("Hello ")
 customThread.start()
 customThread.join()
+
+## Lire un fichier texte:
+with open("file.txt", 'r') as ficher:
+    contenu = ficher.read()
