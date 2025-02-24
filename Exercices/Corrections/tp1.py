@@ -134,3 +134,24 @@ def passer_commande(client, *services, **options):
     commandes_en_attente.append(commande)
     clients[client].append(deepcopy(commande))
     print(f"Commande ajoutée pour {client}: {commande}")
+
+## Question 4
+
+from functools import reduce
+
+def generer_factures():
+    montants = list(map(lambda c:c['total'], commande_en_attente))
+    commandes_importantes = list(filter(lambda c: c['total'] > 100, commande_en_attente))
+    total_general = reduce(lambda acc, val: acc + val, montants, 0)
+
+    print("\n Commandes dépassant 100 euros ")
+    for commande in commandes_importantes:
+        print(commande)
+    
+    print(f"\n Montant total de toutes les commandes {total_general} €")
+
+
+def afficher_historique(client):
+    print(f"\nHistorique des commandes pour {client}:")
+    for commande in clients[client]:
+        print(commande)
