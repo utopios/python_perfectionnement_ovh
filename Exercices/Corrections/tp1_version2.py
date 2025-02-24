@@ -137,3 +137,5 @@ plateforme.generer_factures()
 # Afficher l'historique des commandes
 plateforme.afficher_historique_client("Alice")
 plateforme.afficher_historique_client("Bob")
+
+print(__name__)
