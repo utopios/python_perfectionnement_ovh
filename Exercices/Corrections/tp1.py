@@ -73,3 +73,64 @@ clients = {
 }
 
 commande_en_attente = deque()
+
+## Question 3 Version Nicolas
+
+def ajouter_client(nom):
+    if nom not in clients:
+        clients[nom]=set()
+
+# def passer_commande(nom, *args, **kwargs) -> bool:
+#     if nom not in clients:
+#         raise NameError("Le nom n'existe pas")
+    
+#     total = 0
+#     for service in args:
+#         total += service.calculer_prix()
+    
+#     if 'remise' in kwargs:
+#         total *= 0.9
+#     if 'urgent' in    kwargs:
+#         total *= 1.2
+    
+#     commande = {'client':nom, 'services': args, 'options': kwargs, 'total': total}
+
+#     commandes_en_attente.append(commande)
+#     clients[nom].append(commande)
+#     return True
+
+    
+
+
+# ajouter_client("nicolas")
+
+# print(f'tous les clients: {clients}')
+
+# s1 = Serveur('srv1',1,2,1)
+# c1 = Cloud('cld1',1) 
+# d1 = Domaine('toto.re',2,'.com')
+# passer_commande("nicolas", s1, c1, d1, remise= True, urgent= False)
+
+# print(f'toutes les commandes: {commandes_en_attente}')
+
+## Question 3 Version Ihab
+
+def passer_commande(client, *services, **options):
+    total = sum(service.calculer_prix() for service in services)
+    
+    if options.get("remise"):
+        total *= (1 - options["remise"] / 100)
+
+    if options.get("urgent"):
+        total += 20
+    
+    commande = {
+        "client": client,
+        "services": [service.nom for service in services],
+        "total": round(total, 2),
+        "options": options
+    }
+    
+    commandes_en_attente.append(commande)
+    clients[client].append(deepcopy(commande))
+    print(f"Commande ajoutée pour {client}: {commande}")
