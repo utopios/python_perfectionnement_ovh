@@ -8,8 +8,6 @@ while True:
     response = client.recv(255) # 255 octets max
     if response != "":
         print(response)
-        if response.endswith(b"CLOSE"):
-            break
-print("Close")
+        client.sendall(response + b" response")
 client.close()
 mon_socket.close()
