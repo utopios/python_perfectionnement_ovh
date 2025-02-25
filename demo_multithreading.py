@@ -68,9 +68,9 @@ class Railway:
         self.lock.release() #Task is completed, release the lock 
  
 obj = Railway(2)
-t1 = Thread(target = obj.reserve, args = (1, ))  
-t2 = Thread(target = obj.reserve, args = (3, ))
-t3 = Thread(target = obj.reserve, args = (1, ))
+t1 = Thread(target = obj.reserve, args = (1, ), daemon=True)  
+t2 = Thread(target = obj.reserve, args = (3, ), daemon=True)
+t3 = Thread(target = obj.reserve, args = (1, ), daemon=True)
 #Give names to the threads  
 t1.name = "First Person"
 t2.name = "Second Person"
