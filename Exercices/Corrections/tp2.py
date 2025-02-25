@@ -1,4 +1,4 @@
-from threading import Lock
+from threading import Lock, Semaphore
 import random
 import time
 from concurrent.futures import ThreadPoolExecutor
@@ -6,6 +6,7 @@ class ServerManager:
     def __init__(self):
         self.serveurs = []
         self.lock = Lock()
+        self.semaphore = Semaphore(3)
     
     def creer_serveur(self, client_id):
         
@@ -14,8 +15,8 @@ class ServerManager:
         # self.serveurs.append(serveur)
         # print(f"[{time.strftime('%H:%M:%S')}] Client {client_id} : Créé {serveur}")
         # self.lock.release()
-        
-        with self.lock:
+        with self.semaphore:
+        #with self.lock:
             serveur = f"Serveur-{client_id}-{random.randint(1000, 9999)}"
             self.serveurs.append(serveur)
             print(f"[{time.strftime('%H:%M:%S')}] Client {client_id} : Créé {serveur}")
@@ -23,7 +24,8 @@ class ServerManager:
         time.sleep(random.uniform(0.5, 1.5))
 
     def redemarrer_serveur(self, client_id):
-        with self.lock:
+        with self.semaphore:
+        #with self.lock:
             if self.serveurs:
                 serveur = random.choice(self.serveurs)
                 print(f"[{time.strftime('%H:%M:%S')}] Client {client_id} : Redémarre {serveur}")
@@ -31,7 +33,8 @@ class ServerManager:
                 print(f"[{time.strftime('%H:%M:%S')}] Client {client_id} : Aucun serveur à redémarrer.")
 
     def supprimer_serveur(self, client_id):
-        with self.lock:
+        with self.semaphore:
+        #with self.lock:
             if self.serveurs:
                 serveur = self.serveurs.pop()
                 print(f"[{time.strftime('%H:%M:%S')}] Client {client_id} : Supprimé {serveur}")
