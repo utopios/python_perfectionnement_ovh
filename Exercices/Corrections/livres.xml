@@ -1,0 +1,123 @@
+<?xml version="1.0" ?>
+<livres>
+    <livre>
+        <titre>Le Seigneur des Anneaux</titre>
+        <auteur>J.R.R. Tolkien</auteur>
+        <genre>Fiction, Fantaisie</genre>
+        <annee_parution>1954</annee_parution>
+    </livre>
+    <livre>
+        <titre>1984</titre>
+        <auteur>George Orwell</auteur>
+        <genre>Fiction, Dystopie</genre>
+        <annee_parution>1949</annee_parution>
+    </livre>
+    <livre>
+        <titre>Orgueil et Préjugés</titre>
+        <auteur>Jane Austen</auteur>
+        <genre>Roman, Romance</genre>
+        <annee_parution>1813</annee_parution>
+    </livre>
+    <livre>
+        <titre>Harry Potter à l'école des sorciers</titre>
+        <auteur>J.K. Rowling</auteur>
+        <genre>Fiction, Fantaisie</genre>
+        <annee_parution>1997</annee_parution>
+    </livre>
+    <livre>
+        <titre>Fondation</titre>
+        <auteur>Isaac Asimov</auteur>
+        <genre>Science-fiction</genre>
+        <annee_parution>1951</annee_parution>
+    </livre>
+    <livre>
+        <titre>Crime et Châtiment</titre>
+        <auteur>Fiodor Dostoïevski</auteur>
+        <genre>Roman</genre>
+        <annee_parution>1866</annee_parution>
+    </livre>
+    <livre>
+        <titre>Les Misérables</titre>
+        <auteur>Victor Hugo</auteur>
+        <genre>Roman</genre>
+        <annee_parution>1862</annee_parution>
+    </livre>
+    <livre>
+        <titre>Le Petit Prince</titre>
+        <auteur>Antoine de Saint-Exupéry</auteur>
+        <genre>Fiction, Conte</genre>
+        <annee_parution>1943</annee_parution>
+    </livre>
+    <livre>
+        <titre>Don Quichotte</titre>
+        <auteur>Miguel de Cervantes</auteur>
+        <genre>Roman</genre>
+        <annee_parution>1605</annee_parution>
+    </livre>
+    <livre>
+        <titre>Les Trois Mousquetaires</titre>
+        <auteur>Alexandre Dumas</auteur>
+        <genre>Roman, Aventure</genre>
+        <annee_parution>1844</annee_parution>
+    </livre>
+    <livre>
+        <titre>Frankenstein</titre>
+        <auteur>Mary Shelley</auteur>
+        <genre>Horreur, Science-fiction</genre>
+        <annee_parution>1818</annee_parution>
+    </livre>
+    <livre>
+        <titre>Le Tour du monde en quatre-vingts jours</titre>
+        <auteur>Jules Verne</auteur>
+        <genre>Roman, Aventure</genre>
+        <annee_parution>1873</annee_parution>
+    </livre>
+    <livre>
+        <titre>Anna Karénine</titre>
+        <auteur>Léon Tolstoï</auteur>
+        <genre>Roman</genre>
+        <annee_parution>1877</annee_parution>
+    </livre>
+    <livre>
+        <titre>Moby Dick</titre>
+        <auteur>Herman Melville</auteur>
+        <genre>Roman, Aventure</genre>
+        <annee_parution>1851</annee_parution>
+    </livre>
+    <livre>
+        <titre>L'Étranger</titre>
+        <auteur>Albert Camus</auteur>
+        <genre>Roman, Philosophique</genre>
+        <annee_parution>1942</annee_parution>
+    </livre>
+    <livre>
+        <titre>Le Comte de Monte-Cristo</titre>
+        <auteur>Alexandre Dumas</auteur>
+        <genre>Roman, Aventure</genre>
+        <annee_parution>1844</annee_parution>
+    </livre>
+    <livre>
+        <titre>Dracula</titre>
+        <auteur>Bram Stoker</auteur>
+        <genre>Horreur, Fiction</genre>
+        <annee_parution>1897</annee_parution>
+    </livre>
+    <livre>
+        <titre>L'Odyssée</titre>
+        <auteur>Homer</auteur>
+        <genre>Épopée, Mythologie</genre>
+        <annee_parution>8ème siècle av. J.-C.</annee_parution>
+    </livre>
+    <livre>
+        <titre>Le Parfum</titre>
+        <auteur>Patrick Süskind</auteur>
+        <genre>Roman, Thriller</genre>
+        <annee_parution>1985</annee_parution>
+    </livre>
+    <livre>
+        <titre>Les Piliers de la Terre</titre>
+        <auteur>Ken Follett</auteur>
+        <genre>Roman historique</genre>
+        <annee_parution>1989</annee_parution>
+    </livre>
+</livres>

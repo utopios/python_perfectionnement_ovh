@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<livres>
+  <livre annee="1954" genre="Fiction, Fantaisie">Le Seigneur des Anneaux - J.R.R. Tolkien</livre>
+  <livre annee="1949" genre="Fiction, Dystopie">1984 - George Orwell</livre>
+  <livre annee="1813" genre="Roman, Romance">Orgueil et Préjugés - Jane Austen</livre>
+  <livre annee="1997" genre="Fiction, Fantaisie">Harry Potter à l'école des sorciers - J.K. Rowling</livre>
+  <livre annee="1951" genre="Science-fiction">Fondation - Isaac Asimov</livre>
+  <livre annee="1866" genre="Roman">Crime et Châtiment - Fiodor Dostoïevski</livre>
+  <livre annee="1862" genre="Roman">Les Misérables - Victor Hugo</livre>
+  <livre annee="1943" genre="Fiction, Conte">Le Petit Prince - Antoine de Saint-Exupéry</livre>
+  <livre annee="1605" genre="Roman">Don Quichotte - Miguel de Cervantes</livre>
+  <livre annee="1844" genre="Roman, Aventure">Les Trois Mousquetaires - Alexandre Dumas</livre>
+  <livre annee="1818" genre="Horreur, Science-fiction">Frankenstein - Mary Shelley</livre>
+  <livre annee="1873" genre="Roman, Aventure">Le Tour du monde en quatre-vingts jours - Jules Verne</livre>
+  <livre annee="1877" genre="Roman">Anna Karénine - Léon Tolstoï</livre>
+  <livre annee="1851" genre="Roman, Aventure">Moby Dick - Herman Melville</livre>
+  <livre annee="1942" genre="Roman, Philosophique">L'Étranger - Albert Camus</livre>
+  <livre annee="1844" genre="Roman, Aventure">Le Comte de Monte-Cristo - Alexandre Dumas</livre>
+  <livre annee="1897" genre="Horreur, Fiction">Dracula - Bram Stoker</livre>
+  <livre annee="8&#xE8;me si&#xE8;cle av. J.-C." genre="&#xC9;pop&#xE9;e, Mythologie">L'Odyssée - Homer</livre>
+  <livre annee="1985" genre="Roman, Thriller">Le Parfum - Patrick Süskind</livre>
+  <livre annee="1989" genre="Roman historique">Les Piliers de la Terre - Ken Follett</livre>
+</livres>
