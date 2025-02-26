@@ -28,6 +28,7 @@ df = pd.read_csv("Salaries.csv", sep=',')
 
 # print(df.dtypes)
 
+result = df.groupby('sex')[['salary']].mean()
 print(df.groupby('sex')[['salary']].mean())
 
 
