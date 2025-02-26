@@ -8,7 +8,9 @@ print("\nMissing data information:")
 print(covid_data.isna().sum())
 
 
-covid_data['Active'] = covid_data['Confirmed'] - covid_data['Deaths'] - covid_data['Recovered']
+latest_data = covid_data.loc[covid_data.groupby("Country/Region")["Last Update"].idxmax()]
+
+latest_data['Active'] = latest_data['Confirmed'] - latest_data['Deaths'] - latest_data['Recovered']
 result = covid_data.sort_values('Last Update', ascending=False).groupby('Country/Region')[['Confirmed', 'Deaths', 'Recovered', 'Active']].sum().last()
 
 print(result.tail(10))
