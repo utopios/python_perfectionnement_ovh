@@ -21,7 +21,7 @@ L’objectif de ce TP est d’analyser des données réelles sur le COVID-19 en 
 
 ---
 
-### **Q2. Statistiques globales par pays**  
+### **Q2. Statistiques globales par pays**  ## Avoir dans le cas de plusieurs records.
 - Obtenez le **dernier nombre de cas confirmés, de décès, de personnes guéries et de cas actifs** pour chaque pays.  
 - Ajoutez une colonne `Active` calculée par :  
   \[
